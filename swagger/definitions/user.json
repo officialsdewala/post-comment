@@ -1,0 +1,35 @@
+{
+    "type": "object",
+    "required": [
+        "firstName",
+        "lastName",
+        "phoneNumber",
+        "role",
+        "password",
+        "email"
+    ],
+    "properties": {
+        "firstName": {
+            "type": "string"
+        },
+        "lastName": {
+            "type": "string"
+        },
+        "phoneNumber": {
+            "type": "string"
+        },
+        "email": {
+            "type": "string"
+        },
+        "profilePic": {
+            "type": "string"
+        },
+        "role": {
+            "type": "string",
+            "defualt": "user"
+        },
+        "password": {
+            "type": "string"
+        }
+    }
+}

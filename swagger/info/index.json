@@ -1,0 +1,16 @@
+{
+    "title": "Demo Comment Post API",
+    "summary": "My first comment-post API",
+    "description": "My first comment-post API",
+    "termsOfService": "",
+    "contact": {
+      "name": "",
+      "url": "",
+      "email": ""
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+    },
+    "version": "1.0.0"
+  }

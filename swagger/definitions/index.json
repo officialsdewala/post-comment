@@ -1,0 +1,14 @@
+{
+    "User": {
+        "$ref": "./user.json"
+    },
+    "Signin": {
+        "$ref": "./signin.json"
+    },
+    "Post": {
+        "$ref": "./post.json"
+    },
+    "Comment": {
+        "$ref": "./comment.json"
+    }
+}

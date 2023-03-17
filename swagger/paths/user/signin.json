@@ -1,0 +1,33 @@
+{
+    "post": {
+        "tags": [
+            "User"
+        ],
+        "summary": "Signin here",
+        "operationId": "Signin form",
+        
+        "requestBody": {
+            "content": {
+                "application/x-www-form-urlencoded": {
+                    "schema": {
+                        "$ref": "#/components/schemas/Signin"
+                    }
+                }
+            }
+        },
+        "responses": {
+            "200": {
+                "description": "Signed in successfully.",
+                "content": {
+                    "application/json": {}
+                }
+            },
+            "401": {
+                "description": "Invalid email or password.",
+                "content": {
+                    "application/json": {}
+                }
+            }
+        }
+    }
+}

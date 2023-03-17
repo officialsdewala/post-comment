@@ -1,0 +1,33 @@
+{
+    "post": {
+        "tags": [
+            "User"
+        ],
+        "summary": "Signup here",
+        "operationId": "Signup form",
+        
+        "requestBody": {
+            "content": {
+                "application/x-www-form-urlencoded": {
+                    "schema": {
+                        "$ref": "#/components/schemas/User"
+                    }
+                }
+            }
+        },
+        "responses": {
+            "200": {
+                "description": "Signed successfully.",
+                "content": {
+                    "application/json": {}
+                }
+            },
+            "409": {
+                "description": "User with given email already exists",
+                "content": {
+                    "application/json": {}
+                }
+            }
+        }
+    }
+}

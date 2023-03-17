@@ -1,0 +1,29 @@
+{
+    "/signup": {
+        "$ref": "./user/signup.json"
+    },
+    "/generateToken":{
+        "$ref": "./user/signin.json"
+    },
+
+
+    "/post":{
+        "$ref":"./post/createAndGetAllPost.json"
+    },
+    "/post/{id}":{
+        "$ref":"./post/getUpdateAndDeletePostById.json"
+    },
+
+
+
+    "/comment":{
+        "$ref":"./comment/getAllComments.json"
+    },
+    "/comment/{id}":{
+        "$ref":"./comment/createAndGetCommentById.json"
+    },
+    "/comment/{postId}/{commentId}":{
+        "$ref":"./comment/deleteCommentById.json"
+    }
+    
+}

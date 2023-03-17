@@ -1,0 +1,24 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "$ref": "./info/index.json"
+    },
+    "paths": {
+         "$ref": "./paths/index.json"
+
+    },
+    "components": {
+        "schemas": {
+            "$ref": "./definitions/index.json"
+        },
+        "securitySchemes": {
+            "$ref":"./definitions/authorization.json"
+        }
+    },
+    "servers": [
+        {
+            "url": "http://localhost:4000"
+        }
+    ]
+}
+

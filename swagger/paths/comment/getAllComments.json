@@ -1,0 +1,46 @@
+{
+    "get": {
+        "tags": [
+            "Comment"
+        ],
+        "summary": "Get all the Comments here",
+        "operationId": "Fetching all Comments",
+        "security": [
+            {
+                "BearerAuth": []
+            }
+        ],
+        "responses": {
+            "200": {
+                "description": "Comments fetched successfully.",
+                "content": {
+                    "application/json": {}
+                }
+            },
+            "400": {
+                "description": "Bad request",
+                "content": {
+                    "application/json": {}
+                }
+            },
+            "422": {
+                "description": "Invalid parameters",
+                "content": {
+                    "application/json": {}
+                }
+            },
+            "403": {
+                "description": "Forbidden to do this action.",
+                "content": {
+                    "application/json": {}
+                }
+            },
+            "401": {
+                "description": "Unauthorized",
+                "content": {
+                    "application/json": {}
+                }
+            }
+        }
+    }
+}

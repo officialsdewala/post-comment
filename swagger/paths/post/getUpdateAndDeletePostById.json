@@ -1,0 +1,167 @@
+{
+    "get": {
+        "tags": [
+            "Post"
+        ],
+        "parameters": [
+            {
+                "name": "id",
+                "in": "path",
+                "description": "Id of the comment to be fetched.",
+                "required": true,
+                "schema": {
+                    "type": "string"
+                }
+            }
+        ],
+        "summary": "Fetch the post of the given id",
+        "operationId": "Fetch post by id",
+        "security": [
+            {
+                "BearerAuth": []
+            }
+        ],
+        "responses": {
+            "200": {
+                "description": "Post fetched successfully.",
+                "content": {
+                    "application/json": {}
+                }
+            },
+            "400": {
+                "description": "Bad request",
+                "content": {
+                    "application/json": {}
+                }
+            },
+            "422": {
+                "description": "Invalid parameters",
+                "content": {
+                    "application/json": {}
+                }
+            },
+            "403": {
+                "description": "Forbidden to do this action.",
+                "content": {
+                    "application/json": {}
+                }
+            },
+            "401": {
+                "description": "Unauthorized",
+                "content": {
+                    "application/json": {}
+                }
+            }
+        }
+    },
+    "put": {
+        "tags": [
+            "Post"
+        ],
+        "parameters": [
+            {
+                "name": "id",
+                "in": "path",
+                "description": "Id of the post to be updated.",
+                "required": true,
+                "schema": {
+                    "type": "string"
+                }
+            }
+        ],
+        "summary": "update the post of the given id",
+        "operationId": "Updating post by id",
+        "security": [
+            {
+                "BearerAuth": []
+            }
+        ],
+        "responses": {
+            "200": {
+                "description": "Post updated successfully.",
+                "content": {
+                    "application/json": {}
+                }
+            },
+            "400": {
+                "description": "Bad request",
+                "content": {
+                    "application/json": {}
+                }
+            },
+            "422": {
+                "description": "Invalid parameters",
+                "content": {
+                    "application/json": {}
+                }
+            },
+            "403": {
+                "description": "Forbidden to do this action.",
+                "content": {
+                    "application/json": {}
+                }
+            },
+            "401": {
+                "description": "Unauthorized",
+                "content": {
+                    "application/json": {}
+                }
+            }
+        }
+    },
+    "delete": {
+        "tags": [
+            "Post"
+        ],
+        "parameters": [
+            {
+                "name": "id",
+                "in": "path",
+                "description": "Id of the post on tobe deleted.",
+                "required": true,
+                "schema": {
+                    "type": "string"
+                }
+            }
+        ],
+        "summary": "Delete post of the given id",
+        "operationId": "Delete post by id",
+        "security": [
+            {
+                "BearerAuth": []
+            }
+        ],
+        "responses": {
+            "200": {
+                "description": "Post deleted successfully.",
+                "content": {
+                    "application/json": {}
+                }
+            },
+            "400": {
+                "description": "Bad request",
+                "content": {
+                    "application/json": {}
+                }
+            },
+            "422": {
+                "description": "Invalid parameters",
+                "content": {
+                    "application/json": {}
+                }
+            },
+            "403": {
+                "description": "Forbidden to do this action.",
+                "content": {
+                    "application/json": {}
+                }
+            },
+            "401": {
+                "description": "Unauthorized",
+                "content": {
+                    "application/json": {}
+                }
+            }
+        }
+    }
+}
